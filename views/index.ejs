@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>plushy cult</title>
+        <link rel="shortcut icon" href="public/favicon.png">
+
+        <meta name="web_author" content="23t">
+        <meta name="designer" content="23t">
+        <meta name="description" content="plushy cult minecraft server // dajana.tk">
+        <meta name="robots" content="index, follow">
+        <meta name="google" content="notranslate">
+
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:image" content="./public/favicon.png">
+        <meta property="og:url" content="http://www.dajana.tk/"/>
+        <meta property="og:title" content="dajana.tk" />
+        <meta property="og:description" content="plushycult / survival minecraft server" />
+        <meta property="og:image" content="./public/favicon.png"/>
+        <meta itemprop="thumbnailUrl" content="./public/favicon.png" name="thumbnail">
+    </head>
+    <body>
+        <style>
+            body, html {
+                background-color: black;
+                height: 100%;
+                font-family: sans-serif, serif;
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+            }
+            header {
+                width: 100%;
+                background-color: orange;
+                color: white;
+            }
+            header h1 {
+                font-size: 4rem;
+                text-align: center;
+                padding-bottom: 1rem;
+                margin: 0;
+            }
+
+            main {
+                color: white;
+                font-size: 2em;
+                text-align: center;
+                height: 100%;
+                word-break: break-all;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            #server {
+                width: 25rem;
+                max-width: 25rem;
+                padding:6rem;
+                background: orange;
+            }
+            #socials {
+                width: 25rem;
+                max-width: 25rem;
+                margin-top: 1rem;
+                background: orange;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem 6rem;
+            }
+            #socials img {
+                width: 8rem;
+                height: 8rem
+            }
+            #baby {
+                width: 25rem;
+                max-width: 25rem;
+                margin-top: 1rem;
+                background: orange;
+                padding: 2rem 6rem;
+                color: white;
+            }
+        </style> 
+        
+
+        <main>
+            <div id="server">
+                <a href="/"><header><h1>plushy cult</h1></header></a>
+                <% if (!locals.server) { %>
+                    <%- error.message %> 
+                <% } else { %>
+                    <%- server.host %>:<%- server.port %> 
+                    <br>
+                    <%- server.onlinePlayers %>/<%- server.maxPlayers %> players [<%- server.version %>]
+                <% } %>
+                
+            </div>
+
+            <div id="socials">
+                <a href="https://twitter.com/23tits"><img src="public/twitter.png" alt="Twitter Logo"></a>
+                <a href="https://discord.gg/393X8SJ"><img src="public/discord.png" alt="Discord Logo"></a>
+            </div>
+
+            <a href="https://twitter.com/bagofsouls"><div id="baby">
+                i love my girlfriend
+                <br><br>
+                todo: add server map
+            </div></a>
+        </main>
+    </body>
+</html>
