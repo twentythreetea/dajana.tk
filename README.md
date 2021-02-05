@@ -1,2 +1,2 @@
-# [dajana.tk](http://dajana.tk/)
+# boobs
 website with minecraft server ping
